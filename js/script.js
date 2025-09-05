@@ -52,7 +52,7 @@ function renderCards(cards) {
             const deployBtn = card.querySelector('.deploy');
             deployBtn.addEventListener('click', function(e) {
                 e.preventDefault();
-                alert('Deploy não disponível para este projeto.');
+                alert('Deploy não disponível para este projeto. Só funciona localmente');
             });
         }
     });
@@ -108,4 +108,5 @@ document.addEventListener('DOMContentLoaded', function () {
             menuToggle.setAttribute('aria-expanded', isOpen);
         });
     }
+
 });
