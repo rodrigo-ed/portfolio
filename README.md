@@ -1,6 +1,6 @@
 # Portfolio RodrigoDev
 
-Este é um projeto do meu portfólio pessoal desenvolvido por me, estudante de Análise e Desenvolvimento de Sistemas, com foco em desenvolvimento Full Stack e análise de dados.
+Este é um projeto do meu portfólio pessoal desenvolvido por mim, estudante de Análise e Desenvolvimento de Sistemas, com foco em desenvolvimento Full Stack e análise de dados.
 
 ## Funcionalidades
 
@@ -48,3 +48,4 @@ portfolio/
 - Email: eduardorodrigoalmeida18@gmail.com
 - LinkedIn: [linkedin.com/in/rodrigo-eduardo-91a731376](https://www.linkedin.com/in/rodrigo-eduardo-91a731376)
 - GitHub: [github.com/rodrigo-ed](https://github.com/rodrigo-ed)
+
