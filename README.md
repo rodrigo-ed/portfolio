@@ -46,6 +46,7 @@ portfolio/
 
 - WhatsApp: [Clique para enviar mensagem](https://wa.me/5581991246738)
 - Email: eduardorodrigoalmeida18@gmail.com
-- LinkedIn: [linkedin.com/in/rodrigo-eduardo-91a731376](https://www.linkedin.com/in/rodrigo-eduardo-91a731376)
+- LinkedIn: [linkedin.com/in/rodrigo-eduardodev/](https://www.linkedin.com/in/rodrigo-eduardodev/)
 - GitHub: [github.com/rodrigo-ed](https://github.com/rodrigo-ed)
+
 
