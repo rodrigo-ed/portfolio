@@ -63,7 +63,7 @@ export default function Hero() {
         {/* Título principal */}
         <h1
           className="font-syne font-extrabold leading-[1.05] tracking-[-0.03em] mb-6 animate-[fadeUp_0.5s_ease_0.1s_both]"
-          style={{ fontSize: 'clamp(3rem, 8vw, 6rem)', color: 'var(--text-primary)' }}
+          style={{ fontSize: 'clamp(1.5rem, 5.5vw, 4.5rem)', color: 'var(--text-primary)' }}
         >
           Desenvolvedor
           <br />

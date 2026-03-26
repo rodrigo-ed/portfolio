@@ -38,7 +38,7 @@ const PROJECTS = [
     tags: ['Next.js', 'React', 'Tailwind CSS', 'Vercel'],
     status: 'Produção',
     accent: '#3d7fff',
-    link: '#',
+    link: 'https://portfolio-nine-delta-ex00bxws7w.vercel.app/',
     repo: 'https://github.com/rodrigo-ed/my-portfolio'
   },
 ];
