@@ -1,0 +1,401 @@
+/* Responsividade para mobile (até 600px) */
+@media (max-width: 600px) {
+
+    /* HOME: layout em coluna */
+    .home {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* SOBRE: esconde a foto, mostra só o texto */
+    .container--sobre-imagem {
+        display: none;
+    }
+
+    .container--sobre-texto {
+        width: 100%;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
+
+    .main-div-photo {
+        order: -1;
+        width: 120px;
+        height: 120px;
+        margin: 0 auto 1rem auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main-div-texto h1 {
+        font-size: 2rem;
+        /* Nome menor */
+        text-align: center;
+    }
+
+    .main-div-texto p {
+        font-size: 1.3rem;
+        /* Texto menor */
+        text-align: center;
+    }
+
+    .main-div-botoes {
+        flex-direction: column;
+        width: 100%;
+        gap: 0.5rem;
+        align-items: center;
+    }
+
+    .main-div-botoes-item {
+        width: 80%;
+        height: 40px;
+    }
+
+    .main-div-botoes-item button {
+        font-size: 1rem;
+        height: 100%;
+        width: 100%;
+        border-radius: 30px;
+    }
+}
+
+/* Responsividade para tablets e telas médias (até 900px) */
+@media (max-width: 900px) {
+
+    main,
+    .sobre,
+    .container--principal-sobre,
+    .section--contato,
+    .contato-container {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        align-items: stretch;
+    }
+
+    .main-div-photo,
+    .container--sobre-imagem {
+        width: 100%;
+        height: 250px;
+    }
+
+    .main-div-texto,
+    .container--sobre-texto {
+        width: 100%;
+        height: auto;
+    }
+
+    .container--sobre-imagem {
+        display: none;
+    }
+
+    .contato-container {
+        width: 100%;
+        padding: 0.5rem;
+    }
+
+    .contato-form {
+        margin-top: 1rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .cards-container {
+        flex-direction: column;
+        gap: 1.5rem;
+        align-items: center;
+    }
+}
+
+@media (max-width: 700px) {
+    nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    header {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .nome-navbar {
+        margin-bottom: 0;
+    }
+} 
+
+/* Navbar responsiva */
+@media (max-width: 700px) {
+    nav {
+        position: relative;
+        width: 100%;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .navbar-list {
+        flex-direction: column;
+        gap: 0;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: var(--cor-fundo);
+        border-top: 1px solid var(--cor-destaque);
+        display: none;
+        z-index: 10;
+    }
+
+    .navbar-list.open {
+        display: flex;
+    }
+
+    .navbar-list li {
+        width: 100%;
+    }
+
+    .navbar-list a {
+        display: block;
+        width: 100%;
+        padding: 1rem;
+        text-align: center;
+        font-size: 1.2rem;
+        border-bottom: 1px solid var(--cor-destaque);
+        background: rgba(29, 28, 28, 0.9);
+        color: var(--cor-texto-principal);
+        transition: background 0.2s, color 0.2s;
+    }
+
+    .navbar-list a:last-child {
+        border-bottom: none;
+    }
+
+    .navbar-list a:hover,
+    .navbar-list a:focus {
+        background: var(--cor-destaque);
+        color: #fff;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+    .container--sobre-imagem {
+        display: flex !important;
+        width: 100%;
+        height: 250px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container--sobre-imagem img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+}
+
+
+/* Mobile (até 600px) */
+@media (max-width: 600px) {
+    .home,
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        height: auto;
+    }
+    .main-div-photo {
+        order: -1;
+        width: 120px;
+        height: 120px;
+        margin: 0 auto 1rem auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .main-div-photo img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+    .main-div-texto {
+        width: 100%;
+        text-align: center;
+    }
+    .main-div-texto h1 {
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+    }
+    .main-div-texto p {
+        font-size: 1.1rem;
+        margin-bottom: 1rem;
+    }
+    .main-div-botoes {
+        flex-direction: column;
+        width: 100%;
+        gap: 0.5rem;
+        align-items: center;
+    }
+    .main-div-botoes-item {
+        width: 80%;
+        height: 40px;
+    }
+    .main-div-botoes-item button {
+        font-size: 1rem;
+        height: 100%;
+        width: 100%;
+        border-radius: 30px;
+    }
+    /* Esconde a segunda foto (sobre) */
+    .container--sobre-imagem {
+        display: none !important;
+    }
+    .container--sobre-texto {
+        width: 100%;
+    }
+    footer {
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
+}
+
+/* Tablets (601px até 900px) */
+@media (min-width: 601px) and (max-width: 900px) {
+    .home,
+    main,
+    .sobre,
+    .container--principal-sobre {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+        height: auto;
+    }
+    .main-div-photo {
+        order: -1;
+        width: 180px;
+        height: 180px;
+        margin: 0 auto 1rem auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .main-div-photo img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+    .main-div-texto {
+        width: 100%;
+        text-align: center;
+    }
+    .main-div-texto h1 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+    .main-div-botoes {
+        flex-direction: column;
+        width: 100%;
+        gap: 0.7rem;
+        align-items: center;
+        margin: 0 auto;
+    }
+    .main-div-botoes-item {
+        width: 60%;
+        height: 40px;
+    }
+    /* Esconde a segunda foto (sobre) */
+    .container--sobre-imagem {
+        display: none !important;
+    }
+    .container--sobre-texto {
+        width: 100%;
+        text-align: center;
+    }
+    .section--projetos {
+        height: auto;
+    }
+    .contato-form {
+        margin-top: 1rem;
+    }
+}
+
+/* Cards responsivos */
+@media (max-width: 900px) {
+    .cards-container {
+        flex-direction: column;
+        gap: 1.5rem;
+        align-items: center;
+    }
+}
+
+/* Navbar responsiva */
+@media (max-width: 700px) {
+    nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    header {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .nome-navbar {
+        margin-bottom: 0;
+    }
+    nav {
+        position: relative;
+        width: 100%;
+    }
+    .menu-toggle {
+        display: block;
+    }
+    .navbar-list {
+        flex-direction: column;
+        gap: 0;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: var(--cor-fundo);
+        border-top: 1px solid var(--cor-destaque);
+        display: none;
+        z-index: 10;
+    }
+    .navbar-list.open {
+        display: flex;
+    }
+    .navbar-list li {
+        width: 100%;
+    }
+    .navbar-list a {
+        display: block;
+        width: 100%;
+        padding: 1rem;
+        text-align: center;
+        font-size: 1rem;
+        color: var(--cor-texto-principal);
+        transition: background 0.2s, color 0.2s;
+    }
+    .navbar-list a:last-child {
+        border-bottom: none;
+    }
+    .navbar-list a:hover,
+    .navbar-list a:focus {
+        background: var(--cor-destaque);
+        color: #fff;
+    }
+}

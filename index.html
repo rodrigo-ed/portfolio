@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Portfólio de Rodrigo Eduardo, estudante de Análise e Desenvolvimento de Sistemas, focado em desenvolvimento full stack e análise de dados.">
+    <meta name="keywords"
+        content="Portfólio, Rodrigo Eduardo, Desenvolvimento Full Stack, Análise de Dados, Python, JavaScript, SQL, HTML, CSS">
+    <meta name="author" content="Rodrigo Eduardo">
+    <!-- ...Favicon... -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!--Estilos CSS-->
+    <link rel="stylesheet" href="css/main-style.css">
+    <link rel="stylesheet" href="css/navbar-style.css">
+    <link rel="stylesheet" href="css/card-styles.css">
+    <link rel="stylesheet" href="css/responsividade.css">
+    <title>Meu Portfólio | Rodrigo Eduardo</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header>
+        <h1 class="nome-navbar" id="home">Rodrigo<span>Dev</span></h1>
+        <nav>
+            <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
+                <span class="menu-icon"></span>
+            </button>
+            <ul class="navbar-list">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato"><span class="destaque-contato">Contato</span></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main>
+        <div class="main-div-texto">
+            <h1>Olá, Sou Rodrigo Eduardo</h1>
+            <p>Estudante de ADS | Full Stack</p>
+            <div class="main-div-botoes">
+                <div class="main-div-botoes-item">
+                    <button type="button" aria-label="Ver Projetos"
+                        onclick="document.getElementById('projetos').scrollIntoView({behavior: 'smooth'});">Ver
+                        Projetos</button>
+                </div>
+                <div class="main-div-botoes-item">
+                    <button type="button" aria-label="Baixar Currículo" onclick="baixarCurriculo()">Meu
+                        Currículo</button>
+                </div>
+            </div>
+        </div>
+        <div class="main-div-photo">
+            <img src="assets/photo-perfil.png" alt="Foto de Rodrigo Eduardo">
+        </div>
+
+    </main>
+
+    <!-- Seção Sobre -->
+    <section class="sobre" id="sobre">
+        <div class="container--principal-sobre">
+            <div class="container--sobre-imagem">
+                <img src="assets/my-photo-about.png" alt="Foto de Rodrigo Eduardo">
+            </div>
+            <div class="container--sobre-texto">
+                <h2>Sobre Mim</h2>
+                <p>Atualmente curso Análise e Desenvolvimento de Sistemas e sou apaixonado por tecnologia. Há dois anos
+                    venho me dedicando intensamente aos estudos, com foco inicial em desenvolvimento full stack e
+                    análise de dados. Tenho grande interesse em explorar novas tecnologias e acompanhar tendências do
+                    setor, sempre buscando expandir meu conhecimento.
+                </p>
+
+                <p>As principais linguagens e ferramentas que utilizo são Python, JavaScript, SQL, HTML e CSS. Ao longo
+                    dessa jornada, participei de diversos projetos práticos que contribuíram significativamente para o
+                    desenvolvimento das minhas habilidades técnicas e analíticas.
+
+                </p>
+                <p>
+                    Embora ainda não possua experiência profissional formal na área, estou constantemente em busca de
+                    oportunidades que me permitam aprender, colaborar e crescer como desenvolvedor. Acredito no poder da
+                    curiosidade, da prática e da evolução contínua.
+                </p>
+            </div>
+        </div>
+
+        <!--Seção projetos-->
+    </section>
+    <section class="section--projetos" id="projetos">
+        <h2>Projetos</h2>
+        <div class="cards-container">
+            <!-- Os cards serão inseridos via JavaScript -->
+        </div>
+
+    </section>
+
+    <!--Seção contato-->
+    <section class="section--contato" id="contato">
+        <h2>Contato</h2>
+        <div class="contato-container">
+            <div class="contato-info">
+                <h3>Como me encontrar:</h3>
+
+                <ul>
+                    <li>
+                        <i class="fas fa-phone"></i>
+                        <span>+55 81 99124-6738</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-envelope"></i>
+                        <span>eduardorodrigoalmeida18@gmail.com</span>
+                    </li>
+                    <li>
+                        <i class="fab fa-linkedin"></i>
+                        <a href="https://www.linkedin.com/in/rodrigo-eduardodev/" target="_blank"
+                            rel="noopener noreferrer" aria-label="LinkedIn Rodrigo Eduardo">
+                            linkedin.com/in/rodrigo-eduardo-91a731376
+                        </a>
+                    </li>
+                    <li>
+                        <i class="fab fa-github"></i>
+                        <a href="https://github.com/rodrigo-ed" target="_blank" rel="noopener noreferrer"
+                            aria-label="GitHub Rodrigo Eduardo">
+                            github.com/rodrigo-ed
+                        </a>
+                    </li>
+                    <li>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Recife e Região, PE - Presencial | Remoto</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="contato-form">
+                <form id="whatsappForm">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+                    <button type="submit" aria-label="Enviar mensagem para WhatsApp">
+                        <i class="fab fa-whatsapp"></i> Enviar para WhatsApp
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Rodrigo Eduardo. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Linking custom script -->
+    <script src="js/script.js"></script>
+</body>
+
+
+</html>

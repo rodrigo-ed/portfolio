@@ -1,0 +1,286 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    list-style-type: none;
+}
+
+/* --Primaria--cores */
+:root {
+    --cor-fundo: #121212;
+    --cor-texto-principal: #E0E0E0;
+    --cor-texto-secundario: #B0B0B0;
+    --cor-destaque: #0099FF;
+    --cor-botao: #1E90FF;
+    --cor-botao-hover: #007ACC;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--cor-fundo);
+}
+
+main,
+.sobre {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 80vh;
+}
+
+.main-div-photo,
+.container--sobre-imagem {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 400px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: cover;
+    }
+}
+
+.main-div-texto,
+.container--sobre-texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 600px;
+    height: 500px;
+
+    h1 {
+        font-size: 4rem;
+        font-weight: bold;
+        color: var(--cor-texto-principal);
+        margin-bottom: 20px;
+
+    }
+
+    h2 {
+        font-size: 2rem;
+        margin-bottom: 16px;
+        font-weight: bold;
+        color: var(--cor-texto-principal);
+    }
+
+    p {
+        font-size: 1.2rem;
+        margin-bottom: 16px;
+        font-weight: lighter;
+        color: var(--cor-texto-secundario);
+    }
+
+}
+
+.container--sobre-texto {
+    background-color: rgba(29, 28, 28, 0.7);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7);
+}
+
+.main-div-botoes {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 350px;
+    height: 100px;
+    gap: 20px;
+}
+
+.main-div-botoes-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 60px;
+
+    button {
+        width: 100%;
+        height: 100%;
+        background-color: var(--cor-botao);
+        color: var(--cor-texto-principal);
+        font-size: 1rem;
+        font-weight: bold;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+
+        &:hover {
+            background-color: var(--cor-botao-hover);
+        }
+    }
+}
+
+.container--principal-sobre {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    height: 80vh;
+    gap: 5px;
+}
+
+.container--sobre-imagem img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+    border: solid 4px var(--cor-fundo);
+    transition: transform 0.3s;
+
+}
+
+.container--sobre-imagem img:hover {
+    transform: scale(1.05);
+}
+
+/* --Seção do contato-- */
+.section--contato {
+    padding: 2rem 1rem;
+    width: 100%;
+    height: 80vh;
+    color: var(--cor-texto-secundario);
+    margin-top: 50px;
+}
+
+.section--contato h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: var(--cor-texto-principal);
+}
+
+.contato-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.contato-container {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.contato-info {
+    flex: 1;
+    min-width: 260px;
+
+}
+
+.contato-info ul {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 0 0;
+}
+
+.contato-info li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    font-size: 1.05rem;
+}
+
+.contato-info i {
+    margin-right: 0.7rem;
+    font-size: 1.2rem;
+    color: var(--cor-texto-secundario);
+    min-width: 24px;
+    text-align: center;
+}
+
+.contato-info a {
+    color: #0077ff;
+    text-decoration: none;
+    word-break: break-all;
+}
+
+.contato-form {
+    flex: 1;
+    min-width: 260px;
+    background: rgba(29, 28, 28, 0.7);
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.contato-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contato-form label {
+    font-weight: 500;
+}
+
+.contato-form input,
+.contato-form textarea {
+    padding: 0.7rem;
+    border: 1px solid #ccc;
+    background: #bebdbd;
+    border-radius: 6px;
+    font-size: 1rem;
+    resize: none;
+}
+
+.contato-form button {
+    background: var(--cor-botao);
+    color: #fff;
+    border: none;
+    padding: 0.8rem;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: background 0.2s;
+}
+
+.contato-form button:hover {
+    background: #1da851;
+}
+
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+    color: var(--cor-texto-secundario);
+}
+/* Foco visível para acessibilidade */
+button:focus,
+a:focus {
+    outline: 2px solid var(--cor-destaque);
+    outline-offset: 2px;
+}
+
+/* Animação suave em links e botões */
+a,
+button {
+    transition: background 0.2s, color 0.2s, outline 0.2s;
+}
+
+/* Corrige seletores encadeados para imagens */
+.main-div-photo img,
+.container--sobre-imagem img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
