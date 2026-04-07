@@ -9,7 +9,7 @@ export default function Footer() {
       <div className="max-w-container mx-auto px-6 flex items-center justify-between gap-4 flex-wrap">
 
         <div className="font-mono text-sm" style={{ color: 'var(--text-secondary)' }}>
-          <span className="text-blue-500">R</span><span>Tech</span>
+          <span className="text-blue-500">R</span><span>rodrigositeesuporte</span>
         </div>
 
         <p className="text-[0.85rem]" style={{ color: 'var(--text-muted)' }}>

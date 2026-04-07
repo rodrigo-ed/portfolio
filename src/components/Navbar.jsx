@@ -3,16 +3,16 @@
 import { useState, useEffect, useCallback } from 'react';
 
 const NAV_LINKS = [
-  { href: '#home',     label: 'Home' },
-  { href: '#sobre',    label: 'Sobre' },
+  { href: '#home', label: 'Home' },
+  { href: '#sobre', label: 'Sobre' },
   { href: '#servicos', label: 'Serviços' },
-  { href: '#contato',  label: 'Contato' },
+  { href: '#contato', label: 'Contato' },
 ];
 
 export default function Navbar() {
-  const [theme, setTheme]       = useState('dark');
+  const [theme, setTheme] = useState('dark');
   const [scrolled, setScrolled] = useState(false);
-  const [active, setActive]     = useState('#home');
+  const [active, setActive] = useState('#home');
   const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
@@ -58,7 +58,7 @@ export default function Navbar() {
         {/* Logo */}
         <a href="#home" className="font-mono text-[1.15rem] font-medium transition-opacity hover:opacity-75"
           style={{ color: 'var(--text-primary)' }}>
-          <span className="text-blue-500">R</span><span>tech</span>
+          <span className="text-blue-500">R</span><span>rodrigositeesuporte</span>
         </a>
 
         {/* Desktop links */}
@@ -69,7 +69,7 @@ export default function Navbar() {
                 href={href}
                 className="block px-4 py-1.5 rounded-lg text-sm font-medium transition-all duration-200"
                 style={{
-                  color:      active === href ? '#1a6bff' : 'var(--text-secondary)',
+                  color: active === href ? '#1a6bff' : 'var(--text-secondary)',
                   background: active === href ? 'var(--tag-bg)' : 'transparent',
                 }}
                 onMouseEnter={e => { if (active !== href) e.currentTarget.style.background = 'var(--bg-card-2)'; e.currentTarget.style.color = 'var(--text-primary)'; }}
@@ -111,8 +111,8 @@ export default function Navbar() {
                   background: 'var(--text-primary)',
                   transform: menuOpen
                     ? i === 0 ? 'translateY(6.5px) rotate(45deg)'
-                    : i === 2 ? 'translateY(-6.5px) rotate(-45deg)'
-                    : 'none'
+                      : i === 2 ? 'translateY(-6.5px) rotate(-45deg)'
+                        : 'none'
                     : 'none',
                   opacity: menuOpen && i === 1 ? 0 : 1,
                 }}
@@ -127,8 +127,8 @@ export default function Navbar() {
         className="md:hidden flex flex-col gap-1 overflow-hidden transition-all duration-300"
         style={{
           maxHeight: menuOpen ? '400px' : '0',
-          opacity:   menuOpen ? 1 : 0,
-          padding:   menuOpen ? '16px 24px 24px' : '0 24px',
+          opacity: menuOpen ? 1 : 0,
+          padding: menuOpen ? '16px 24px 24px' : '0 24px',
           borderTop: menuOpen ? '1px solid var(--border)' : 'none',
         }}
       >
@@ -139,7 +139,7 @@ export default function Navbar() {
             onClick={() => setMenuOpen(false)}
             className="block px-3 py-2.5 rounded-lg text-sm font-medium transition-colors duration-200"
             style={{
-              color:      active === href ? '#1a6bff' : 'var(--text-secondary)',
+              color: active === href ? '#1a6bff' : 'var(--text-secondary)',
               background: active === href ? 'var(--tag-bg)' : 'transparent',
             }}
           >

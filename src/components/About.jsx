@@ -25,7 +25,7 @@ export default function About() {
               Sou Rodrigo, estudante de Análise e Desenvolvimento de Sistemas. Desde criança, procurei entender como os computadores funcionam e, a partir daí,
               comecei a me interessar por tecnologia. No ensino médio, sem nenhum conhecimento prévio, desbroquei um notebook antigo e consegui fazê-lo funcionar.
               Foi nesse momento que percebi que queria aprender mais sobre o assunto. Hoje, com experiência em desenvolvimento web e suporte técnico (voltado para softwares),
-              estou criando a Rtech, que une a criação de sites para negócios locais ao suporte técnico de qualidade — tudo com um toque pessoal e atenção aos detalhes.
+              estou criando o <span className="text-blue-500">rodrigositeesuporte</span>, que une a criação de sites para negócios locais ao suporte técnico de qualidade — tudo com um toque pessoal e atenção aos detalhes.
             </p>
             <p className="leading-[1.8] mb-7" style={{ color: 'var(--text-secondary)', fontSize: '1.02rem' }}>
               Acredito que um bom site é aquele que atrai, engaja e converte em clientes. Também defendo que suporte técnico de qualidade é essencial para manter tudo funcionando perfeitamente.</p>

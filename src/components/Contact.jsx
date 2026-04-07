@@ -5,11 +5,11 @@ import { useState } from 'react';
 const SOCIAL = [
   { label: 'GitHub', href: 'https://github.com/rodrigo-ed', abbr: 'GH' },
   { label: 'LinkedIn', href: 'https://www.linkedin.com/in/rodrigoalmeidaads/', abbr: 'LI' },
-  { label: 'Instagram', href: 'https://www.instagram.com/rtech.tech/', abbr: 'IT' },
+  { label: 'Instagram', href: 'https://www.instagram.com/rodrigositeesuporte/', abbr: 'IT' },
 ];
 
 const CONTACT_INFO = [
-  { icon: '✉️', label: 'Email', value: 'eduardorodrigoalmeida18@gmail.com', href: 'mailto:eduardorodrigoalmeida18@gmail.com' },
+  { icon: '✉️', label: 'Email', value: 'rodrigositeesuporte@gmail.com', href: 'mailto:rodrigositeesuporte@gmail.com' },
   { icon: '📱', label: 'WhatsApp', value: '+55 (81) 9 9124-6738', href: 'https://wa.me/5581991246738' },
   { icon: '📍', label: 'Localização', value: 'Barreiros — PE', href: null },
 ];
